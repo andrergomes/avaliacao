@@ -9,13 +9,16 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 
 import br.com.andrergomes.avaliacao.dao.jpa.ConnectionFactory;
 
+@WebFilter(filterName = "filtroConexao", urlPatterns = {"/*"})
 public class FiltroConexao implements Filter {
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
+		
 		EntityManager em = ConnectionFactory.getEntityManager();
 		request.setAttribute(ConstantesSistema.CONEXAO.name(), em);
 

@@ -7,12 +7,14 @@ import java.security.NoSuchAlgorithmException;
 import javax.persistence.EntityManager;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 import br.com.andrergomes.avaliacao.dao.jpa.ConnectionFactory;
 import br.com.andrergomes.avaliacao.dao.jpa.UsuarioDao;
 import br.com.andrergomes.avaliacao.model.TipoUsuario;
 import br.com.andrergomes.avaliacao.model.Usuario;
 
+@WebListener
 public class InicializadorListener implements ServletContextListener {
 
 	public void contextInitialized(ServletContextEvent context) {

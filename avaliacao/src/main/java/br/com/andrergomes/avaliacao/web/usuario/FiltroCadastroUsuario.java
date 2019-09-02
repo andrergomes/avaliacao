@@ -25,7 +25,7 @@ public class FiltroCadastroUsuario implements Filter {
 	    Usuario usuarioLogado = (Usuario)session.getAttribute(ConstantesSistema.USUARIO_LOGADO.name());
 	    
 	    if (usuarioLogado == null || !usuarioLogado.isAdmin()) {
-	      request.setAttribute(ConstantesSistema.ERRO.name(), "Acesso n�o autorizado");
+	      request.setAttribute(ConstantesSistema.ERRO.name(), "Acesso não autorizado");
 	      request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
 	    } else {
 	      

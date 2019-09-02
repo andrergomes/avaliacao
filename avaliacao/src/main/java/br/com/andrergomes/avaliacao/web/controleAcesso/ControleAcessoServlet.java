@@ -20,7 +20,7 @@ public class ControleAcessoServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String acao = request.getParameter("acao");
-		String nomeClasse = "br.com.pesquisa.avaliacao.web.controleAcesso." + acao;
+		String nomeClasse = "br.com.andrergomes.avaliacao.web.controleAcesso." + acao;
 
 		try {
 			Class<?> classe = Class.forName(nomeClasse);

@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.net.URLDecoder;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpSession;
 
 import br.com.andrergomes.avaliacao.web.ConstantesSistema;
 
+@WebServlet({"/image/*"})
 public class ImageServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -3576518256545087256L;

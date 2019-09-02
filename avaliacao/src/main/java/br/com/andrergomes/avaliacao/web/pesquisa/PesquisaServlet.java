@@ -20,7 +20,7 @@ public class PesquisaServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String acao = request.getParameter("acao");
-		String nomeClasse = "br.com.pesquisa.avaliacao.web.pesquisa." + acao;
+		String nomeClasse = "br.com.andrergomes.avaliacao.web.pesquisa." + acao;
 
 		try {
 			Class<?> classe = Class.forName(nomeClasse);

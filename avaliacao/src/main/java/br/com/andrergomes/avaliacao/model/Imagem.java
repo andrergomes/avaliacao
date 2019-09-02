@@ -3,7 +3,9 @@ package br.com.andrergomes.avaliacao.model;
 public class Imagem {
 
 	private Long id;
+	
 	private String nome;
+	
 	private Boolean reconstruida;
 
 	public String getNome() {

@@ -33,15 +33,15 @@ public class Login implements ILogica {
 
 			if (usuario != null) {
 				if (usuario.isPesquisaConcluida()) {
-					map.put(ConstantesSistema.ERRO.name(), "Usu�rio j� realizou avalia��o.");
+					map.put(ConstantesSistema.ERRO.name(), "Usuário já realizou avaliação.");
 				} else {
 
 					try {
 						senhaEhValida = usuario.senhaEhValida(senha);
 					} catch (NoSuchAlgorithmException e) {
-						throw new ServletException("Problema na decodifica��o da senha do usu�rio");
+						throw new ServletException("Problema na decodificação da senha do usuário");
 					} catch (UnsupportedEncodingException e) {
-						throw new ServletException("Problema na decodifica��o da senha do usu�rio");
+						throw new ServletException("Problema na decodificação da senha do usuário");
 					}
 
 					if (senhaEhValida) {

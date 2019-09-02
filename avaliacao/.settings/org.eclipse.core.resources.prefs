@@ -3,3 +3,8 @@ encoding//src/main/java/br/com/andrergomes/avaliacao/web/controleAcesso/Login.ja
 encoding//src/main/java/br/com/andrergomes/avaliacao/web/pesquisa/FiltroPesquisa.java=UTF-8
 encoding//src/main/java/br/com/andrergomes/avaliacao/web/pesquisa/PesquisaServlet.java=UTF-8
 encoding//src/main/java/br/com/andrergomes/avaliacao/web/usuario/FiltroCadastroUsuario.java=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/cabecalho.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/cadastrousuario-controleacesso.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/exibirimagens-avaliacao.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/finalizar-avaliacao.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/iniciar-avaliacao.jsp=UTF-8
