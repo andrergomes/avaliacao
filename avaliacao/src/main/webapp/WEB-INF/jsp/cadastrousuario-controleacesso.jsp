@@ -2,12 +2,11 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Cadastro Usu�rio</title>
+		<title>Cadastro Usuário</title>
 		<script src="js/jquery-1.11.3.min.js"></script>
 	</head>
 	<body>
-		<c:import url="cabecalho.jsp"></c:import>
-		
+		<c:import url="cabecalho.jsp"></c:import>		
 		<form action="usuario" method="post">
 			<div align="center" style="width: 100%; height: 80%">					
 				<table style="position: relative; top: 30%;">
