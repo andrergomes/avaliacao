@@ -1,6 +1,15 @@
- version: '3'
+version: '3'
 
- services:
+services:
+  avaliacao-tomcat:
+    image: andrergomes/avaliacao-tomcat7
+    ports:
+      - "8080:8080"
+    depends_on:
+      - avaliacao-postgres
+    networks:
+      - postgres-compose-network
+      
   avaliacao-postgres:
     image: postgres 
     environment:
@@ -25,9 +34,9 @@
       - avaliacao-postgres
     networks:
       - postgres-compose-network
- volumes:
+volumes:
   pgdata:
     driver: local
- networks: 
+networks: 
   postgres-compose-network:
     driver: bridge

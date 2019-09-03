@@ -9,7 +9,7 @@
 		<properties>
 			<!-- POSTGRESQL -->			
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.99.100:15432/avaliacao"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://postgres_avaliacao-postgres_1:5432/avaliacao"/>
 			<!-- <property name="javax.persistence.jdbc.user" value="postgres"/>
 			<property name="javax.persistence.jdbc.password" value="postgres"/> -->
 			<property name="javax.persistence.jdbc.user" value="andre"/>
