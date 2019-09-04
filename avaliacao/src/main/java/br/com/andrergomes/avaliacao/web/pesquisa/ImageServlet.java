@@ -64,5 +64,5 @@ public class ImageServlet extends HttpServlet {
 		} finally {
 			input.close();
 		}
-	}
+	}	
 }

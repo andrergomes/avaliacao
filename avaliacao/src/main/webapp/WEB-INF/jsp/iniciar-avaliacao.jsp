@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -33,7 +34,7 @@
 		<h5 align="left"> 
 			<br><br><br>
 			Observações importantes:
-			<br>- Ao clicar em "Iniciar", o usuário terá acesso às imagens e terá que selecionar uma das duas opções disponíveis("Sim" ou "Não"),&nbsp;fazendo isso,&nbsp;ele será direcionado para a próxima imagem automaticamente.  <br>- O tamanho da região selecionada para reconstrução é sempre a mesma (como a do exemplo),&nbsp;por�m,&nbsp;a posi��o da regi�o selecionada pode variar de imagem para imagem.<br>- Na imagem usada como exemplo a �rea reconstru�da � identificada facilmente,&nbsp;porém,&nbsp;dependendo da imagem,&nbsp;a reconstrução pode não ser tão perceptível.  
+			<br>- Ao clicar em "Iniciar", o usuário terá acesso às imagens e terá que selecionar uma das duas opções disponíveis("Sim" ou "Não"),&nbsp;fazendo isso,&nbsp;ele será direcionado para a próxima imagem automaticamente.  <br>- O tamanho da região selecionada para reconstrução é sempre a mesma (como a do exemplo),&nbsp;porém,&nbsp;a posição da região selecionada pode variar de imagem para imagem.<br>- Na imagem usada como exemplo a área reconstruída é identificada facilmente,&nbsp;porém,&nbsp;dependendo da imagem,&nbsp;a reconstrução pode não ser tão perceptível.  
 			<br>
 		</h5>
 		<h5 align="center"><br><br>Obrigado por sua colaboração!</h5>

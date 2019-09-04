@@ -1,6 +1,7 @@
 package br.com.andrergomes.avaliacao.web.pesquisa;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -41,7 +42,9 @@ public class IniciarPesquisa implements ILogica {
 		StringBuilder nomesImagens = new StringBuilder("");
 
 		for (int i = 0; i < arrayNomesImagensDiretorio.length; i++) {
-			nomesImagens.append(arrayNomesImagensDiretorio[i]);
+			String nomeImagem = arrayNomesImagensDiretorio[i];
+
+			nomesImagens.append(nomeImagem);
 
 			if (i < arrayNomesImagensDiretorio.length - 1) {
 				nomesImagens.append(",");
@@ -55,7 +58,13 @@ public class IniciarPesquisa implements ILogica {
 		File caminhoImagens = new File(caminhoPastas, pastaImagens);
 
 		if (caminhoImagens.exists()) {
-			return caminhoImagens.list();
+			return caminhoImagens.list(new FilenameFilter() {
+
+				@Override
+				public boolean accept(File dir, String name) {
+					return !name.endsWith(".db");
+				}
+			});
 		}
 
 		return null;
